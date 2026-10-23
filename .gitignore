@@ -1,0 +1,6 @@
+# Locale MPQs and release archives are distributed as release assets, not in git.
+*.mpq
+*.MPQ
+*.tar.gz
+*.zip
+*.7z
