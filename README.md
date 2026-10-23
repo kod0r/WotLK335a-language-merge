@@ -1,5 +1,7 @@
 # WotLK 3.3.5a Language Merge
 
+![Banner](wotlklm.jpg)
+
 WoW 3.3.5a ties text and audio to the same locale MPQs. Renaming German speech MPQs to enUS works for most content, but dungeon speech (Brann in Halls of Stone, etc.) is stored with highest priority in the `patch-enUS*.mpq` files, not in the speech MPQs. Those patch MPQs also contain the English text tables (Spell.dbc, Item.dbc, etc.), so replacing them entirely would switch the text to German too.
 
 This repo contains merged locale sets that keep one language for text and the other for audio.
