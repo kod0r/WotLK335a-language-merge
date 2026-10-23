@@ -6,7 +6,7 @@ This repo contains merged locale sets that keep one language for text and the ot
 
 ## Download
 
-The locale sets are published as release assets, not in git.
+Download the archives from the [releases page](https://github.com/kod0r/WotLK335a-language-merge/releases).
 
 | Asset | Text | Audio | Client locale |
 |---|---|---|---|
