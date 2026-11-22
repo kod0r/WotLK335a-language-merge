@@ -17,11 +17,20 @@ Download the archives from the [releases page](https://github.com/kod0r/WotLK335
 
 Each archive contains 9 MPQs: `locale-*`, `expansion-locale-*`, `lichking-locale-*`, `speech-*`, `expansion-speech-*`, `lichking-speech-*`, `patch-*`, `patch-*-2`, `patch-*-3`.
 
+`enDE` exceeds GitHub's 2 GiB per-asset limit, so from v0.0.2 it is uploaded as `enDE.tar.gz.part-00` and `enDE.tar.gz.part-01`. Download both parts plus `enDE.tar.gz.parts.sha256` into one folder, then join them:
+
+```
+cat enDE.tar.gz.part-* > enDE.tar.gz
+```
+
+Windows (cmd): `copy /b enDE.tar.gz.part-00+enDE.tar.gz.part-01 enDE.tar.gz`
+
 ## Usage
 
 English text + German audio (enDE):
 1. Set `SET locale="enUS"` in `WTF/Config.wtf`.
-2. Extract `enDE.tar.gz` and copy all files from `enDE/` into `Data\enUS\`, overwriting existing files.
+2. Join the `enDE.tar.gz.part-*` parts into `enDE.tar.gz` (see above).
+3. Extract `enDE.tar.gz` and copy all files from `enDE/` into `Data\enUS\`, overwriting existing files.
 
 German text + English audio (deEN):
 1. Set `SET locale="deDE"` in `WTF/Config.wtf`.
